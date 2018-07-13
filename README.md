@@ -2,6 +2,8 @@
 
 This project used [ngx-translate](https://github.com/ngx-translate/core) for localization demo
 
+[DEMO](https://prasannaasanthanam.github.io/angular6-localization-ngx-translate/index.html)
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.8.
 
 ## Development server
