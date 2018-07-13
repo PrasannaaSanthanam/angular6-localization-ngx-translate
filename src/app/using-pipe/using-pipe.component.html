@@ -1,0 +1,27 @@
+<div class="card mb-4">
+    <div class="card-body shadow">
+        <h4 class="card-text"> Using Pipe in html (key | translate) </h4>
+        <pre class="pre-scrollable bglight font-italic">
+            <code> {{ htmlPipeCode }} </code>
+        </pre>
+        <ul>
+            <li *ngFor="let fact of messageKeys">
+                <p>{{ fact | translate }}</p>
+            </li>
+            <li>
+                <p [innerHTML] = "'parameterizedKey' | translate: messageKeyParam"> </p>
+            </li>
+        </ul>
+
+        <h4 class="card-text"> Using Pipe In Component </h4>
+        <pre class="pre-scrollable bglight font-italic">
+            <code> {{ pipeInComponent }} </code>
+        </pre>
+        <ul>
+            <li *ngFor="let localizedString of translatedFacts ; let last = last">
+                <p *ngIf="!last">{{ localizedString }}</p>
+                <p *ngIf="last" [innerHTML] = localizedString> </p>
+            </li>
+        </ul>
+    </div>
+</div>

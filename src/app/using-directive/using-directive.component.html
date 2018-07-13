@@ -1,0 +1,13 @@
+<div class="card mb-4">
+    <div class="card-body shadow">
+        <h4 class="card-text"> Using Directive </h4>
+        <pre class="pre-scrollable bglight font-italic">
+            <code> {{ codeSnippet }} </code>
+        </pre>
+        <ul>
+            <li *ngFor="let fact of messageKeys">
+                <p translate>{{ fact }}</p>
+            </li>
+        </ul>
+    </div>
+</div>

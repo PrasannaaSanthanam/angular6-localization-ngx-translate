@@ -1,0 +1,14 @@
+<div class="card mb-4">
+    <div class="card-body shadow">
+        <h4 class="card-text"> Using Service </h4>
+        <pre class="pre-scrollable bglight font-italic">
+            <code> {{ codeSnippet }} </code>
+        </pre>
+        <ul>
+            <li *ngFor="let localizedString of translatedFacts ; let last = last">
+                <p *ngIf="!last">{{ localizedString }}</p>
+                <p *ngIf="last" [innerHTML]=localizedString></p>
+            </li>
+        </ul>
+    </div>
+</div>

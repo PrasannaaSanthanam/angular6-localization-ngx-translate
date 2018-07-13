@@ -1,0 +1,21 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div class="container-fluid">
+    <nav class="navbar fixed-top header">
+        <div class="text-center ">
+            <h4> <a href="https://github.com/ngx-translate/core" target="_blank">{{ title }}</a></h4>
+        </div>
+        <div class="container">
+            <div class="font-weight-bold"> Current Lang: <code>{{ currentLang() }}</code> </div>
+            <button class="btn-sm btn-primary ml-3" (click)="toggleLang()"> Toggle Language</button>
+        </div>
+    </nav>
+
+    <div class="container content">
+        <app-using-pipe></app-using-pipe>
+
+        <app-using-service></app-using-service>
+
+        <app-using-directive></app-using-directive>
+    </div>
+
+</div>
